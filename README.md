@@ -13,19 +13,19 @@
 naming convention: mytest.spec.js
 
 # 02. Runing the Tests
-Running all the tests in headless mode with all configured  browsers
+## Running all the tests in headless mode with all configured  browsers
 > npx playwright test
 
-Running all the tests in headed mode with configured all browsers
+## Running all the tests in headed mode with configured all browsers
 > npx playwright test --headed
 
-Running all the tests only in mytest.spec.js with configured all browsers in headed mode
+## Running all the tests only in mytest.spec.js with configured all browsers in headed mode
 > npx playwright test mytest.spec.js --headed
 
-Running all the tests only in mytest.spec.js with specified browser in headed mode
+## Running all the tests only in mytest.spec.js with specified browser in headed mode
 > npx playwright test mytest.spec.js --project=chromium --headed
 
-Running all the tests only in mytest.spec.js with specified browser in headed mode and debug mode
+## Running all the tests only in mytest.spec.js with specified browser in headed mode and debug mode
 > npx playwright test mytest.spec.js --project=chromium --headed --debug
 
 # 03. Viewing Playwright Report
@@ -72,25 +72,25 @@ To Run recorded scripts
 # 07. Hard Assertions
 https://playwright.dev/docs/test-assertions
 
-# 1. Locator Assertions
+# 7.1. Locator Assertions
 
     await expect('locator').toBeVisible()
 
     await expect('locator').not.toBeVisible()
 
-# 2. Page Assertions
+# 7.2. Page Assertions
 
     await expect(page).toHaveURL()
 
     await expect(page).not.toHaveURL()
 
-# 3. Object Assertions
+# 7.3. Object Assertions
 
     await expect(value1).toEqual(value2)
 
     await expect(value1).not.toEqual(value2)
 
-# 4. Boolean Assertions
+# 7.4. Boolean Assertions
 
     await expect(boolean).toBeTruthy()
 
