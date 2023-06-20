@@ -5,8 +5,11 @@
 2. Install Vscode
 3. Install "Playwright Test for VS Code" extension in VS Code
 4. Creating Playwright project
+
     npm init playwright@latest
+
 5. Installing browsers
+
     npx playwright install
 
 # 01. Creating Tests
