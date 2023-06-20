@@ -41,56 +41,56 @@ naming convention: mytest.spec.js
 https://playwright.dev/docs/locators
 
 # 06. Code Generator
-Code Generator help
+## Code Generator help
  npx playwright codegen --help
 
-To open codegen window along with default browser (chromium)
+## To open codegen window along with default browser (chromium)
  npx playwright codegen   #(copy the generated code and paste in test)
 
-To create recorded script in default language (javascript)
+## To create recorded script in default language (javascript)
  npx playwright codegen -o tests/practice-tests/06-recorded-script.spec.js
 
-To create recorded script in python-pytest
+## To create recorded script in python-pytest
  npx playwright codegen --target python-pytest -o tests/practice-tests/06-recorded-script.py
 
-To open chrome browser
+## To open chrome browser
  npx playwright codegen --browser chromium --channel chrome
 
-To open chrome browser in light mode
+## To open chrome browser in light mode
  npx playwright codegen --browser chromium --channel chrome --color-scheme light
 
-To get emulation device list
+## To get emulation device list
  npx playwright codegen --device --help
 
-To open in iPhone 13 device emulation
+## To open in iPhone 13 device emulation
  npx playwright codegen --device "iPhone 13"
 
-To Run recorded scripts
+## To Run recorded scripts
  npx playwright test tests/practice-tests/06-recorded-script.spec.js
 
 
 # 07. Hard Assertions
 https://playwright.dev/docs/test-assertions
 
-# 7.1. Locator Assertions
+## 1. Locator Assertions
 
     await expect('locator').toBeVisible()
 
     await expect('locator').not.toBeVisible()
 
-# 7.2. Page Assertions
+## 2. Page Assertions
 
     await expect(page).toHaveURL()
 
     await expect(page).not.toHaveURL()
 
-# 7.3. Object Assertions
+## 3. Object Assertions
 
     await expect(value1).toEqual(value2)
 
     await expect(value1).not.toEqual(value2)
 
-# 7.4. Boolean Assertions
+## 4. Boolean Assertions
 
     await expect(boolean).toBeTruthy()
 
