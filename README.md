@@ -5,31 +5,31 @@
 2. Install Vscode
 3. Install "Playwright Test for VS Code" extension in VS Code
 4. Creating Playwright project
- npm init playwright@latest
+    npm init playwright@latest
 5. Installing browsers
- npx playwright install
+    npx playwright install
 
 # 01. Creating Tests
 naming convention: mytest.spec.js
 
 # 02. Runing the Tests
 ## Running all the tests in headless mode with all configured  browsers
- npx playwright test
+    npx playwright test
 
 ## Running all the tests in headed mode with configured all browsers
- npx playwright test --headed
+    npx playwright test --headed
 
 ## Running all the tests only in mytest.spec.js with configured all browsers in headed mode
- npx playwright test mytest.spec.js --headed
+    npx playwright test mytest.spec.js --headed
 
 ## Running all the tests only in mytest.spec.js with specified browser in headed mode
- npx playwright test mytest.spec.js --project=chromium --headed
+    npx playwright test mytest.spec.js --project=chromium --headed
 
 ## Running all the tests only in mytest.spec.js with specified browser in headed mode and debug mode
- npx playwright test mytest.spec.js --project=chromium --headed --debug
+    npx playwright test mytest.spec.js --project=chromium --headed --debug
 
 # 03. Viewing Playwright Report
- npx playwright show-report
+    npx playwright show-report
 
 # 04. Locators
 1. Xpath
@@ -43,39 +43,39 @@ https://playwright.dev/docs/locators
 # 06. Code Generator
 ## Code Generator help
 
- npx playwright codegen --help
+    npx playwright codegen --help
 
 ## To open codegen window along with default browser (chromium)
 
- npx playwright codegen   #(copy the generated code and paste in test)
+    npx playwright codegen   #(copy the generated code and paste in test)
 
 ## To create recorded script in default language (javascript)
 
- npx playwright codegen -o tests/practice-tests/06-recorded-script.spec.js
+    npx playwright codegen -o tests/practice-tests/06-recorded-script.spec.js
 
 ## To create recorded script in python-pytest
 
- npx playwright codegen --target python-pytest -o tests/practice-tests/06-recorded-script.py
+    npx playwright codegen --target python-pytest -o tests/practice-tests/06-recorded-script.py
 
 ## To open chrome browser
 
- npx playwright codegen --browser chromium --channel chrome
+    npx playwright codegen --browser chromium --channel chrome
 
 ## To open chrome browser in light mode
 
- npx playwright codegen --browser chromium --channel chrome --color-scheme light
+    npx playwright codegen --browser chromium --channel chrome --color-scheme light
 
 ## To get emulation device list
 
- npx playwright codegen --device --help
+    npx playwright codegen --device --help
 
 ## To open in iPhone 13 device emulation
 
- npx playwright codegen --device "iPhone 13"
+    npx playwright codegen --device "iPhone 13"
 
 ## To Run recorded scripts
 
- npx playwright test tests/practice-tests/06-recorded-script.spec.js
+    npx playwright test tests/practice-tests/06-recorded-script.spec.js
 
 
 # 07. Hard Assertions
