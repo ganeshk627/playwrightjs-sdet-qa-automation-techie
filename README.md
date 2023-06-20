@@ -56,13 +56,13 @@ https://playwright.dev/docs/locators
 
 ## To open codegen window along with default browser (chromium)
 
-    npx playwright codegen   #(copy the generated code and paste in test)
+    npx playwright codegen
 
-## To create recorded script in default language (javascript)
+## To save recorded script into file in default language (javascript)
 
     npx playwright codegen -o tests/practice-tests/06-recorded-script.spec.js
 
-## To create recorded script in python-pytest
+## To save recorded script into file in python-pytest
 
     npx playwright codegen --target python-pytest -o tests/practice-tests/06-recorded-script.py
 
