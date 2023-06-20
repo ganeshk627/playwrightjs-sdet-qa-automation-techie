@@ -1,14 +1,14 @@
-## playwrightjs-sdet-qa-automation-techie
+# playwrightjs-sdet-qa-automation-techie
 
 # 00. Installation
-1. Install nodejs
-2. Install Vscode
-3. Install "Playwright Test for VS Code" extension in VS Code
-4. Creating Playwright project
+## 1. Install nodejs
+## 2. Install Vscode
+## 3. Install "Playwright Test for VS Code" extension in VS Code
+## 4. Creating Playwright project
 
     npm init playwright@latest
 
-5. Installing browsers
+## 5. Installing browsers
 
     npx playwright install
 
