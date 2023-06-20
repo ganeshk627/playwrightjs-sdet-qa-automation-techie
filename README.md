@@ -73,22 +73,31 @@ To Run recorded scripts
 https://playwright.dev/docs/test-assertions
 
 1. Locator Assertions
+
 await expect('locator').toBeVisible()
+
 await expect('locator').not.toBeVisible()
 
 2. Page Assertions
+
 await expect(page).toHaveURL()
+
 await expect(page).not.toHaveURL()
 
 3. Object Assertions
+
 await expect(value1).toEqual(value2)
+
 await expect(value1).not.toEqual(value2)
 
 4. Boolean Assertions
+
 await expect(boolean).toBeTruthy()
+
 await expect(boolean).toBeFalsy()
 
 # 08. Soft Assertions
+
 https://playwright.dev/docs/test-assertions#soft-assertions
 
 By default, failed assertion will terminate test execution.
@@ -96,25 +105,33 @@ Playwright also supports soft assertions:failed soft assertions do not terminate
 but mark the test as failed.
 
 await expect.soft('locator').toBeVisible()
+
 await expect.soft(page).toHaveURL()
+
 await expect.soft(value1).toEqual(value2)
 
 # 09. Input Boxs
 await expect(page.locator('locator')).toBeEmpty()
 
 await page.fill('locator', 'value')
+
 await page.locator('locator').fill('value')
 
 await expect(page.locator('locator')).not.toBeEmpty()
+
 await expect(page.locator('locator')).toHaveValue('value')
 
 # 10. Radio Buttons and Checkboxes
 await page.locator('locator1').check()
+
 await page.locator('locator2').uncheck()
 
 await expect(page.locator('locator1')).toBeChecked()
+
 await expect(page.locator('locator2')).not.toBeChecked()
+
 await expect(page.locator('locator1').isChecked()).toBeTruthy()
+
 await expect(page.locator('locator2').isChecked()).toBeFalsy()
 
 # 11. Dropdowns
