@@ -42,30 +42,39 @@ https://playwright.dev/docs/locators
 
 # 06. Code Generator
 ## Code Generator help
+
  npx playwright codegen --help
 
 ## To open codegen window along with default browser (chromium)
+
  npx playwright codegen   #(copy the generated code and paste in test)
 
 ## To create recorded script in default language (javascript)
+
  npx playwright codegen -o tests/practice-tests/06-recorded-script.spec.js
 
 ## To create recorded script in python-pytest
+
  npx playwright codegen --target python-pytest -o tests/practice-tests/06-recorded-script.py
 
 ## To open chrome browser
+
  npx playwright codegen --browser chromium --channel chrome
 
 ## To open chrome browser in light mode
+
  npx playwright codegen --browser chromium --channel chrome --color-scheme light
 
 ## To get emulation device list
+
  npx playwright codegen --device --help
 
 ## To open in iPhone 13 device emulation
+
  npx playwright codegen --device "iPhone 13"
 
 ## To Run recorded scripts
+
  npx playwright test tests/practice-tests/06-recorded-script.spec.js
 
 
