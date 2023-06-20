@@ -2,8 +2,14 @@
 
 # 00. Installation
 ## 1. Install nodejs
+https://nodejs.org/en/download
+
 ## 2. Install Vscode
+https://code.visualstudio.com/download
+
 ## 3. Install "Playwright Test for VS Code" extension in VS Code
+https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright
+
 ## 4. Creating Playwright project
 
     npm init playwright@latest
