@@ -72,25 +72,25 @@ To Run recorded scripts
 # 07. Hard Assertions
 https://playwright.dev/docs/test-assertions
 
-1. Locator Assertions
+# 1. Locator Assertions
 
     await expect('locator').toBeVisible()
 
     await expect('locator').not.toBeVisible()
 
-2. Page Assertions
+# 2. Page Assertions
 
     await expect(page).toHaveURL()
 
     await expect(page).not.toHaveURL()
 
-3. Object Assertions
+# 3. Object Assertions
 
     await expect(value1).toEqual(value2)
 
     await expect(value1).not.toEqual(value2)
 
-4. Boolean Assertions
+# 4. Boolean Assertions
 
     await expect(boolean).toBeTruthy()
 
