@@ -128,7 +128,7 @@ but mark the test as failed.
 
     await expect.soft(value1).toEqual(value2)
 
-# 09. Input Boxs
+# 09. Input Boxes
     await expect(page.locator('locator')).toBeEmpty()
 
     await page.fill('locator', 'value')
