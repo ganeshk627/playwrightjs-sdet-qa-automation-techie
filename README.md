@@ -152,4 +152,45 @@ but mark the test as failed.
 
     await expect(page.locator('locator2').isChecked()).toBeFalsy()
 
-# 11. Dropdowns
+# 11. Simple Dropdowns
+    // Select by label text
+    await page.locator('select[name="cars"]').selectOption({label:'Audi'})
+    await page.selectOption('select[name="cars"]', {label:'Saab'})
+
+
+    // Select by visible text
+    await page.locator('select[name="cars"]').selectOption('Volvo')
+    await page.selectOption('select[name="cars"]', 'Audi')
+
+
+    // Select by value
+    await page.locator('select[name="cars"]').selectOption({value:'opel'})
+    await page.locator('select[name="cars"]').selectOption('saab')
+    await page.selectOption('select[name="cars"]', {value:'audi'})
+
+    // Select by index
+    await page.locator('select[name="cars"]').selectOption({index: 0})
+    await page.selectOption('select[name="cars"]', {index:3})
+
+# 12. Multi-select Dropdowns
+    await page.locator('select[name="cars"]').selectOption(['Saab', 'Opel', 'Audi'])
+    await page.selectOption('select[name="cars"]', ['Volvo', 'Audi', 'Opel'])
+
+# 13. Bootstrap/React/Dynamic Dropdowns
+    await page.click('dropdown-loactor')
+    await page.click('option-locator')
+
+# 14. Auto Suggest/ Auto Complete Dropdowns
+    await page.fill('input-loactor', 'input-value')
+    await page.click('search-option-locator')
+
+# 15. Hidden Item Dropdown
+    await page.click('dropdown-loactor')
+    await page.click('option-locator')
+
+# 16. Dialogs
+    await page.on('dialog', dialog=> dialog.accept())
+    await page.on('dialog', dialog=> dialog.accept('text to prompt'))
+    await page.on('dialog', dialog=> console.log(dialog.message()))
+    await page.on('dialog', dialog=> dialog.dismiss())
+
